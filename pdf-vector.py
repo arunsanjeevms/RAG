@@ -4,10 +4,10 @@ import numpy as np
 import pickle
 import os
 
-# Try to import faiss; fall back gracefully if missing
+
 USE_FAISS = True
 try:
-    import faiss  # type: ignore
+    import faiss  
 except Exception as e:  # ModuleNotFoundError or other import issues
     USE_FAISS = False
     print("⚠️  FAISS not available:", str(e))

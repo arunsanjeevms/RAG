@@ -7,7 +7,7 @@ from huggingface_hub import InferenceClient
 # Try to import faiss if available
 USE_FAISS = True
 try:
-    import faiss  # type: ignore
+    import faiss 
 except Exception:
     USE_FAISS = False
 
